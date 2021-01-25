@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { Form } from 'antd'
 import { useDispatch } from 'react-redux'
+
 
 import { testActions } from '../../_actions/product_actions'
 
@@ -13,8 +15,14 @@ function LoginPage() {
    }, [])
    
    return (
-      <div>
-         LoginPage
+      <div className="app">
+         <form>
+            <Form.Item
+               type="email"
+            >
+               
+            </Form.Item>
+         </form>
       </div>
    )
 }
